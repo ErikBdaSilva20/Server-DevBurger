@@ -12,14 +12,15 @@ import CreatePaymentIntent from './app/controllers/stripe/CreatePaymentIntentCon
 const routes = new Router();
 const upload = multer(multerConfig);
 
-routes.get('/', (req, res) => {
-  return res.json({ message: 'Welcome to my first API project!!!' });
-});
-
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 
 routes.use(authMiddleware);
+
+routes.get('/', (req, res) => {
+  return res.json({ message: 'Welcome to my first API project!!!' });
+});
+
 routes.post('/products', upload.single('file'), ProductController.store);
 routes.get('/products', authMiddleware, ProductController.index);
 routes.put('/products/:id', upload.single('file'), ProductController.update);
