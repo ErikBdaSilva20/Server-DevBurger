@@ -16,7 +16,6 @@ routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 
 routes.use(authMiddleware);
-
 routes.get('/', (req, res) => {
   return res.json({ message: 'Welcome to my first API project!!!' });
 });
