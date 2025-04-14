@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
 
 const corsOptions = {
-  origin: 'https://dev-burger-interface-rggf.vercel.app',
+  origin: 'https://dev-burger-interface-rggf.vercel.app/',
   credentials: true,
 };
 
@@ -16,7 +16,10 @@ const __dirname = dirname(__filename);
 class App {
   constructor() {
     this.app = express();
+
     this.app.use(cors(corsOptions));
+
+    this.app.options('*', cors(corsOptions));
 
     this.middlewares();
     this.routes();
