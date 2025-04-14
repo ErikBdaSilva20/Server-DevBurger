@@ -7,8 +7,8 @@ import { dirname, resolve } from 'path';
 
 const corsOptions = {
   origin: [
-    'https://dev-burger-interface-rggf.vercel.app/',
-    'https://server-devburger-production.up.railway.app/',
+    'https://dev-burger-interface-rggf.vercel.app',
+    'https://server-devburger-production.up.railway.app',
   ],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
