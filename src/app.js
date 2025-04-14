@@ -37,7 +37,6 @@ class App {
       express.static(resolve(__dirname, '..', 'uploads')),
     );
   }
-
   routes() {
     this.app.use(routes);
   }
