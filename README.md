@@ -4,7 +4,6 @@
 O **DevBurger** é uma aplicação completa desenvolvida como parte de um projeto do DevClub. Seu objetivo é simular o funcionamento real de uma hamburgueria online, com funcionalidades completas de um e-commerce. O sistema está dividido em dois repositórios: um para o **Front-End** e outro para o **Back-End**, com integração total entre eles.
 
 ## 🖥️ Back-End
-
 ## 🛠️ Tecnologias Utilizadas:
 - ⚙️ **Express.js** – Framework principal do servidor
 - 🌐 **CORS** – Liberação de acesso externo para o front-end
